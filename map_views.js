@@ -3,7 +3,7 @@ const mapViewList = {
     {
       subtitle: "中国云南省：中国西南的云南省是一个多山的地区。",
       text:
-        "<p>中国西南的云南省是一个多山的地区。</p><p class='legend'>(红色部分为云南)</p><p class='directions'>&#128269; 单击右箭头按钮查看下一张图</p>",
+        "<p class='legend'>(红色部分为云南)</p><p class='directions'>&#128269; 单击右箭头按钮查看下一张图</p>",
       layers: ["yunnanOutline"], //
       zoom: 5,
       lat: 30.0,
@@ -14,7 +14,7 @@ const mapViewList = {
     {
       subtitle: "云南高原地区",
       text:
-        "<p>该地区是许多湖泊的家园，总面积为1066平方公里。其中九个高原湖泊的表面积超过30平方公里。这些湖泊跨越多个分水岭。(分水岭用红色标出，湖泊用蓝色标出。</p>",
+        "<p>该地区是许多湖泊的家园，总面积为1066平方公里。其中九个高原湖泊的表面积超过30平方公里。这些湖泊跨越多个分水岭。</p><p>(分水岭用红色标出，湖泊用蓝色标出。)</p>",
       layers: ["subBasins", "nineLakes"],
       zoom: 7,
       lat: 26.199619,
@@ -25,7 +25,7 @@ const mapViewList = {
     {
       subtitle: "玉溪城区",
       text:
-        '<p>该地区是许多湖泊的家园，总面积为1066平方公里。其中九个高原湖泊的表面积超过30平方公里。这些湖泊跨越多个分水岭。</p><p class="legend">(绿色部分为玉溪市)</p>',
+        '<p>其中三个高原湖泊位于云南玉溪城区。玉溪市政府负责这些湖泊的修复和保护。</p><p class="legend">(绿色部分为玉溪市)</p>',
       layers: ["yuxiOutline", "nineLakes"],
       zoom: 8,
       lat: 24.423742,
