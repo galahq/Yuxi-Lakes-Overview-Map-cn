@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>
+      玉溪市城区湖泊概况
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""
+    ></script>
+
+    <script src="map_layers/yuxilakes.geojson"></script>
+    <script src="map_layers/yunnan.geojson"></script>
+    <script src="map_layers/ninelakes.geojson"></script>
+    <script src="map_layers/basins.geojson"></script>
+    <script src="map_layers/erie.geojson"></script>
+    <script src="map_layers/yuxidistrict.geojson"></script>
+    <script src="poly_styles.js"></script>
+    <script src="map_views.js"></script>
+  </head>
+
+  <body>
+    <div class="screen-reader-only">
+      <h2>Map Overview</h2>
+      <ol>
+        <li>
+          第1页: 中国云南地区。 云南省是中国西南部的山区。
+          该省与缅甸，越南和老挝接壤。
+        </li>
+        <li>
+          第2页: 286/5000 云南高原地区。
+          该地区拥有许多湖泊，总表面积为1,066平方千米。
+          这些“高原”湖泊中有9个的表面积超过30平方千米。湖泊跨越多个分水岭。
+          抚仙湖，星云湖和齐鲁湖都在同一分水岭。
+        </li>
+        <li>
+          第3页:
+          玉溪城区:其中三个高原湖泊位于云南玉溪城区。玉溪市政府负责这些湖泊的修复和保护。
+        </li>
+        <li>
+          第4页: 玉溪三湖。 在这三个湖泊中，抚县比齐鲁或星云大得多，也更深。
+          从卫星图像上看，齐鲁和星云显示为绿色，而抚仙由于更深，更干净而呈深蓝色。
+        </li>
+        <li>
+          第5页: 比较玉溪湖和伊利湖。
+          尽管伊利湖的水量和表面积较大，但面临着类似的水质威胁。
+          伊利湖也许比其他湖泊大100倍，尽管抚仙湖平均比伊利湖深。
+        </li>
+      </ol>
+    </div>
+    <div id="divmap">
+      <div id="mainmap"></div>
+    </div>
+
+    <div class="citation">
+      <p>数据源:</p>
+      <ul>
+        <li>
+          "Hydrographic Basins of China," 劳伦斯·克里斯曼（Lawrence
+          Crissman）编译，莱克斯·伯曼（Lex Berman）编辑 Skinner Data Archive,
+          2012.
+        </li>
+        <li>
+          "GADM Administrative Areas." 从以下位置下载：
+          <a href="gadm.org">gadm.org</a>)
+        </li>
+        <li>
+          “China Inland Water.” 从以下位置下载：
+          <a href="https://www.diva-gis.org/datadown">DIVA-GIS.</a>
+        </li>
+        <li>
+          "Lake Erie Shoreline." Michigan DNR Open Data. 从以下位置下载：
+          <a
+            href="https://gis-michigan.opendata.arcgis.com/datasets/aeb53d0d79a645cba567b73931f88621_11"
+            >GIS-Michigan Open Data</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="listeners.js"></script>
+    <script src="map.js"></script>
+    <script src="map_elements/navigation.js"></script>
+  </body>
+</html>
