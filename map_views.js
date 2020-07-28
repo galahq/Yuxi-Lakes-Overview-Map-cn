@@ -36,7 +36,7 @@ const mapViewList = {
     {
       subtitle: "玉溪境内的三个湖",
       text:
-        "<p>在这三个湖中，抚仙湖比杞麓湖和星云湖更大、更深(点击这些湖可以了解更多)。</p><p class='directions'>&#128269; 单击湖泊以了解有关它们的更多信息。</p>",
+        "<p>在这三个湖中，抚仙湖比杞麓湖和星云湖更大、更深。</p><p class='directions'>&#128269; 单击湖泊以了解有关它们的更多信息。</p>",
       layers: ["yuxiLakes"], //
       zoom: 10,
       lat: 24.423742,
