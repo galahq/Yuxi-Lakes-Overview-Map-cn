@@ -1,9 +1,9 @@
 const mapViewList = {
   views: [
     {
-      subtitle: "中国云南省：中国西南的云南省是一个多山的地区。",
+      subtitle: "中国云南省",
       text:
-        "<p class='legend'>(红色部分为云南)</p><p class='directions'>&#128269; 单击右箭头按钮查看下一张图</p>",
+        "<p>中国西南的云南省是一个多山的地区。</p><p class='legend'>(红色部分为云南)</p><p class='directions'>&#128269; 单击右箭头按钮查看下一张图</p>",
       layers: ["yunnanOutline"], //
       zoom: 5,
       lat: 30.0,
